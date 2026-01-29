@@ -51,3 +51,25 @@ js keyword  name of variable and then value.
 
 let firstName = Abhishek
 consol.log(firstName)
+
+
+
+<!-- Data types  -->
+
+1 number : floating point numbers used for decimal and integers let age = 23;
+2 string : sequence of characters used for text let firstName = 'Jonas'
+3 Boolean : logical type that can only be true or false let fullage = True;
+
+4 Undefined: Means a variable has been declared but hasn't been given a value yet. The language assigns this automatically.
+Example: let name; (the value of name is undefined)
+
+5 Null: Represents an intentional absence of any value. It's a value you, the programmer, assign to a variable to explicitly say "this is empty".
+Example: let data = null;
+
+6 Symbol: A unique and immutable value, introduced in ES6, often used as an identifier for object properties to avoid naming conflicts.
+Example: Symbol("id")
+
+7 BigInt: Used for representing whole numbers that are larger than the Number type can safely handle. You create a BigInt by adding n to the end of a number.
+Example: 12345678901234567890n
+
+
