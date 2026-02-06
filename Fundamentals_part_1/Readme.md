@@ -105,14 +105,141 @@ introduced in Es6, are a modern way to work with strings in javascirpt to make o
 
 
 <!-- conditionals  -->
-To perform any actions based on the decision we use if and else statements. 
+To perform any actions based on the decision we use if and else statements.
+To run some programming parts of our program we use conditions. 
+
+if(decision){ // if this line is true execute code int the if block 
+    block of code 
+}else { 
+    do this 
+}
+
+
+
+const age = 19; 
+const isOldEnough = age>=18;
+
+if(isolodengouh){
+    consolelog(sarah can drive )
+}
+
+if(age>=18){
+    consolelog(sarah can drive )
+   
+} else {
+     some calculation to check how years are left 
+}
+
+<!-- we use else block whenever the if block false  -->
+it is called control structure 
+so that we have some block of code which will run and other block code will not based on the conditions.
+if(){
+
+}else{
+
+}
+
+<!-- lets make a program for centurey  -->
+let centur;
+const birthYear = 1991;
+if(birthYear <=2000){
+ centur = 20;
+}else{
+    century = 21;
+}
 
 
 
 
 
 
+<!-- Type conversion and Coercion --> 
+
+Type conversion its a process in js where one data is converted manually into another type
+
+coercion means the data type will convert automatically 
+
+
+<!-- Truthy and falsy value -->
+
+These are some truthy values
+Non-zero numbers: 42, -1, 3.14
+Non-empty strings: "hello", "0", " "
+Objects and arrays: {}, []
+Functions: function() {}
+Dates: new Date()
+Symbols: Symbol()
+BigInt values other than 0n: 10n
+
+What Are Falsy Values?
+Falsy values are values that evaluate to false when used in a Boolean. JavaScript has a fixed list of falsy values
+
+false
+0 (and -0)
+0n (BigInt zero)
+"" (empty string)
+null
+undefined
+NaN
+document.all (used for backward compatibility)
+
+
+== checks the eaqulity value not type 
+=== checks for strict equality (both type and value).
 
 
 
 
+Statements vs Expressions
+
+This is VERY important for backend interviews.
+
+🔹 Statement
+
+A complete instruction.
+
+let x = 10;
+if (x > 5) {
+  console.log("Big");
+}
+
+
+These are statements.
+
+🔹 Expression
+
+Something that produces a value.
+
+10 + 5          // 15
+x > 5           // true
+"Hello" + "JS"  // "HelloJS"
+
+
+
+
+/////////
+Ternary Operator (Conditional Operator)
+
+It’s a short version of if...else.
+
+✅ Syntax
+condition ? valueIfTrue : valueIfFalse;
+
+Example
+let age = 18;
+
+let message = age >= 18 ? "Adult" : "Minor";
+console.log(message);
+
+
+👉 Output: Adult
+
+Convert this to ternary:
+let score = 80;
+let result;
+
+if (score >= 50) {
+  result = "Pass";
+} else {
+  result = "Fail";
+}
