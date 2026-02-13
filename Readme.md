@@ -260,3 +260,68 @@ So When to Use What?
 Use function declarations for main logic
 
 Use function expressions when assigning to variables or passing into other functions
+
+
+Array 
+Array is a data structure used to store multiple values in a single variable.
+Each value inside an array has a position called an index.
+index always starts with 0.
+
+Objects
+An object is a data structure used to store data in key–value pairs.
+Instead of index (like arrays), objects use keys.
+
+
+
+
+<!-- What is dom ?  -->
+Dom stands for Documenet Object model: Structured Representation of HTML
+Documents.Allows javascript to access html elements and styles to manipulate them.
+for each element in html there is one element node in the dom tree we 
+
+
+dom is a complete representation of document
+
+
+When a web page loads, the browser creates something called the DOM (Document Object Model).
+
+In the DOM:
+
+Every HTML element becomes an object
+
+That object is called a Node
+
+💻 Example
+
+HTML:
+
+<p id="text">Hello</p>
+
+
+JavaScript:
+
+let element = document.getElementById("text");
+
+console.log(element);
+
+
+Here:
+
+<p> is an HTML element
+
+element is a JavaScript object
+
+It has properties like:
+
+element.innerText
+
+element.id
+
+element.style
+
+element.classList
+
+So yes — it has “extra information” (properties and methods).
+
+
+
