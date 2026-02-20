@@ -1,5 +1,5 @@
   'use strict'
-
+/*
 // Selecting elements  by class name  it selects all the classes with the same name.
 // const ele = document.querySelector('.message');
 // console.log(document.querySelector('.number'));
@@ -81,7 +81,7 @@ document.querySelector('.again').addEventListener('click',function(){
   console.log("hello")
   score = 20;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
-
+  console.log(secretNumber)
 
   // document.querySelector('.message').textContent = 'Start guessing...';
 
@@ -91,7 +91,52 @@ document.querySelector('.again').addEventListener('click',function(){
   document.querySelector('.message').textContent = 'Start guessing ? '
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.number').style.width = '15rem';
+  
 });
+
+
+*/
+
+// first we grab teh value and then match the secret number 
+// lets store the html elements in the variable.
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
+let score = 20;
+console.log(secretNumber)
+const check = document.querySelector('.check');
+const message = document.querySelector('.message');
+const again = document.querySelector('.again');
+let number = document.querySelector('.number');
+// console.log(check,message,again,number)
+
+
+// Adding logic for guess number Game.
+
+check.addEventListener('click',function(){
+
+  // imp note whenever we use .value to get value from the input we get string 
+  // type conversion 
+   let guess = Number(document.querySelector('.guess').value);
+  
+   
+//  main game logic if the guess is empty 
+    if(!guess){
+        message.textContent = '🚫 No Number!!';
+    }
+    else if(secretNumber === guess){
+     message.textContent = "🎉 Correct Number!!"
+    }
+    else if(guess !== secretNumber){
+      if(score>=1)
+     message.textContent = guess > secretNumber ? "📈 Too High" : "📉 Too Low";
+     
+    }
+});
+
+
+
+
+
+
 
 
 
